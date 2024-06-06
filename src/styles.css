@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import 'leaflet/dist/leaflet.css';
+
+@font-face {
+    font-family: 'ObviouslyBlack';
+    src: url('assets/Fonts/Obviously-Bold.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Space';
+    src: url('assets/Fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NewSpirit';
+    src: url('assets/Fonts/New Spirit Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-m';
+    src: url('assets/Fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins-r';
+    src: url('assets/Fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.html {
+    font-family: "SpaceGrotesk";
+    src: url('assets/Fonts/SpaceGrotesk-VariableFont_wght.ttf') format('opentype');
+
+  }
+
+@layer base {
+   
+  }

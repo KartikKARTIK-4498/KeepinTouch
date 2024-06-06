@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Keepintouch:build:production"
+              "buildTarget": "Keepintouch:build:production"
             },
             "development": {
-              "browserTarget": "Keepintouch:build:development"
+              "buildTarget": "Keepintouch:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Keepintouch:build"
+            "buildTarget": "Keepintouch:build"
           }
         },
         "test": {
@@ -100,6 +100,6 @@
     }
   },
   "cli": {
-    "analytics": "d3141209-9943-4b07-9555-b43e92b9b350"
+    "analytics": "9f91726b-2cbb-4de8-a9e0-193b2f24422c"
   }
 }

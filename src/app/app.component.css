@@ -1,0 +1,30 @@
+.space-grotesk-bold{
+    font-family: "Space Grotesk", sans-serif !important;
+    font-optical-sizing: auto !important;
+    font-weight: 700 !important;
+    font-style: normal !important;
+  }
+
+  .h1 {
+    font-family: 'ObviouslyBlack';
+  }
+
+  .font-space {
+    font-family: 'Space';
+  }
+
+  .f-new-s {
+    font-family: 'NewSpirit';
+
+  }
+
+  .f-pm {
+    font-family: 'Poppins-r';
+
+  }
+
+  .f-pr {
+    font-family: 'Poppins-r';
+
+  }
+
