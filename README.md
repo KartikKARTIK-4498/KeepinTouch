@@ -80,11 +80,6 @@ Gourmeet est une startup visant à répondre aux besoins des foodies en créant 
    cd ../frontend
    npm install
    ```
-4. **Installez les dépendances pour le frontend :**
-   ```sh
-   cd ../frontend
-   npm install
-   ```
 ### Démarrez le serveur backend :
 
 1. **Démarrez le serveur backend :**
