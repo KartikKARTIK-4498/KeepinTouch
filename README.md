@@ -1,6 +1,6 @@
 # Projet Gourmeet
 
-Bienvenue dans le projet Gourmeet ! 
+Bienvenue dans le projet Gourmeet ! .
 
 
 ## Links 
