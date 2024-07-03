@@ -1,0 +1,330 @@
+<div class="flex flex-col min-h-[100vh] bg-[#ffeebc]">
+    <nav class="flex bg-[#fefadb] w-full p-5 max-h-20">
+        <img src="../../assets/logo2.svg" alt="LOGO" class="w-1/3 sm:w-1/4">
+        <div class="flex justify-end gap-3 w-full">
+            <p class="hidden sm:flex font-space whitespace-nowrap self-center text-[#002b00]">Julie Carter</p>
+            <div
+                class="flex items-center justify-center rounded-full h-10 w-10 aspect-square text-yellow-300 font-bold bg-[#002b00]">
+                J</div>
+            <div
+                class="hidden sm:flex items-center justify-center rounded-full h-10 w-10 aspect-square text-yellow-300 font-bold bg-[#002b00]">
+                0</div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="flex flex-col items-start justify-start p-10 px-3 sm:px-20">
+        <h1
+            class="text-[#002b00] self-stretch text-3xl uppercase font-black max-md:max-w-full max-md:text-4xl leading-10 relative">
+            Mon tableau de bord</h1>
+        <p class="text-[#002b00] font-space text-base max-md:max-w-full">Une sélection de produits frais, bio & variés,
+            en direct de producteurs locaux.</p>
+
+        <div class="hidden sm:flex bg-[#002b00] rounded-2xl gap-2 py-2 px-2 mt-5">
+            <a href="#" class="text-yellow-300 hover:bg-yellow-300/10 transition-all p-3 rounded-xl">Tableau de
+                Board</a>
+            <a href="#" class="text-yellow-300 hover:bg-yellow-300/10 transition-all p-3 rounded-xl">Mes Produits</a>
+            <a href="#" class="text-yellow-300 hover:bg-yellow-300/10 transition-all p-3 rounded-xl">Mes Commercants</a>
+            <select name="commandes"
+                class="text-yellow-300 bg-transparent hover:bg-yellow-300/10 transition-all p-3 rounded-xl">
+                <option [defaultSelected]="true" value="Mes Commandes">Mes Commandes</option>
+            </select>
+        </div>
+
+        <div class="flex sm:hidden bg-[#002b00] rounded-2xl gap-2 py-2 px-2 mt-5 w-full">
+            <select name="commandes"
+                class="w-full text-yellow-300 bg-transparent hover:bg-yellow-300/10 transition-all p-3 rounded-xl">
+                <option [defaultSelected]="true" value="Tableau de Board">Tableau de Board</option>
+                <option value="Mes Produits">Mes Produits</option>
+                <option value="Mes Commercants">Mes Commercants</option>
+                <option value="Mes Commandes">Mes Commandes</option>
+            </select>
+        </div>
+
+
+
+
+
+        <div class="flex flex-col sm:flex-row w-full my-5 gap-5 am:gap-3">
+
+
+
+            <div class="flex flex-col bg-[#fefadb] p-3 py-5 rounded-2xl w-full sm:w-[30%]">
+                <div class="flex bg-[#002b00] py-1 px-3 rounded-lg w-max self-center">
+                    <p class="text-white uppercase">Vous avez 10 propositions en attentes </p>
+                </div>
+
+                <div class="flex items-center justify-center w-full gap-3">
+                    <p
+                        class="flex items-center justify-center h-12 text-white bg-[#002b00] p-3 rounded-full aspect-square">
+                        &larr;</p>
+                    <div class="w-full flex flex-col sm:flex-row items-center justify-center my-5 gap-10">
+                        <div
+                            class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-[#002b00]">
+                            <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                                style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                                <div
+                                    class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-[#002b00]/80 via-[#002b00]/50">
+                                </div>
+                            </div>
+                            <div class="relative flex items-start justify-end">
+                                <p class="text-3xl text-white/50 hover:scale-[1.65] transition-all cursor-pointer">
+                                    &hearts;</p>
+                            </div>
+                            <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                                <p
+                                    class="uppercase bg-[#fefadb] text-[#002b00] w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">
+                                    Restaurateur
+                                </p>
+                                <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                                <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                                <h2
+                                    class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">
+                                    Restaurateur dans le 94, je
+                                    cherche à proposer du sans...</h2>
+                                <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                                    plus &rarr;</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <p
+                        class="flex items-center justify-center h-12 text-white bg-[#002b00] p-3 rounded-full aspect-square">
+                        &rarr;</p>
+                </div>
+
+                <div class="flex gap-4 items-center justify-center">
+                    <p
+                        class="cursor-pointer hover:scale-[1.04] flex items-center justify-center rounded-full bg-[#002b00] text-yellow-300 h-12 aspect-square p-3">
+                        &hearts;</p>
+                    <p
+                        class="cursor-pointer hover:scale-[1.04] flex items-center justify-center rounded-full bg-[#002b00] text-yellow-300 h-12 aspect-square p-3">
+                        &#9746;</p>
+                </div>
+
+                <div class="flex p-5">
+                    <p class="text-[#002b00] text-center">Vous vous êtes trompé, pas de panique !Retrouvez vos refus
+                        dans “Mes commerçants”</p>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-3 w-full sm:w-[70%] gap-5 sm:gap-3">
+                <div
+                    class="flex flex-col sm:flex-row bg-[#fefadb] text-[#002b00] h-full w-full rounded-2xl sm:col-span-3 gap-3 p-3">
+                    <div class="flex flex-row w-full sm:w-1/2 gap-3">
+                        <div class="flex flex-col w-1/2 gap-1">
+                            <p
+                                class="text-white uppercase bg-[#002b00] py-1 px-3 rounded-lg w-max h-max text-sm font-medium">
+                                Statistiques</p>
+                            <p class="text-[#002b00]">Juin 2024</p>
+                            <p
+                                class="flex h-8 w-8 cursor-pointer hover:scale-[1.04] -rotate-45 rounded-full text-yellow-300 items-center justify-center aspect-square bg-[#002b00] p-3">
+                                &rarr;</p>
+                        </div>
+                        <div class="flex flex-col gap-3 justify-center items-center p-3 rounded-xl bg-[#002b00] w-1/2">
+                            <p class="text-yellow-300 font-black text-6xl sm:text-8xl">704</p>
+                            <p class="text-yellow-300">Nombre de visite</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-row w-full sm:w-1/2 gap-3">
+                        <div class="flex flex-col gap-3 justify-center items-center p-3 rounded-xl bg-[#ffeebc] w-1/2">
+                            <p class="text-[#002b00] font-black text-6xl sm:text-8xl">102€</p>
+                            <p class="text-[#002b00]">Revenue</p>
+                        </div>
+                        <div class="flex flex-col gap-3 justify-center items-center p-3 rounded-xl bg-[#ffeebc] w-1/2">
+                            <p class="text-[#002b00] font-black text-6xl sm:text-8xl">709</p>
+                            <p class="text-[#002b00]">Nombre de visite</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex flex-col bg-[#fefadb] text-[#002b00] h-full w-full rounded-2xl gap-3 p-3">
+                    <div class="flex items-center justify-between w-full h-max">
+                        <p
+                            class="text-white uppercase bg-[#002b00] py-1 px-3 rounded-lg w-max h-max text-sm font-medium">
+                            Mes commercants</p>
+                        <p
+                            class="flex h-8 w-8 cursor-pointer hover:scale-[1.04] -rotate-45 rounded-full text-yellow-300 items-center justify-center aspect-square bg-[#002b00] p-3">
+                            &rarr;</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="flex flex-col gap-3 justify-center items-center p-3 rounded-xl bg-[#002b00] w-1/2">
+                            <p class="text-yellow-300 font-black text-5xl">11</p>
+                            <p class="text-yellow-300">Accepté</p>
+                        </div>
+                        <div class="flex flex-col gap-3 justify-center items-center p-3 rounded-xl bg-[#ffeebc] w-1/2">
+                            <p class="text-[#002b00] font-black text-5xl">10</p>
+                            <p class="text-[#002b00]">En Attente</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex flex-col bg-[#fefadb] text-[#002b00] h-full w-full rounded-2xl gap-3 p-3">
+                    <div class="flex items-center justify-between w-full h-max">
+                        <p
+                            class="text-white uppercase bg-[#002b00] py-1 px-3 rounded-lg w-max h-max text-sm font-medium">
+                            Gérer mes produits</p>
+                        <p
+                            class="flex h-8 w-8 cursor-pointer hover:scale-[1.04] -rotate-45 rounded-full text-yellow-300 items-center justify-center aspect-square bg-[#002b00] p-3">
+                            &rarr;</p>
+                    </div>
+                    <div class="grid grid-cols-2 grid-rows-2 gap-2">
+                        <div class="flex flex-col bg-[#ffeebc] p-2 gap-2 rounded-xl">
+                            <p>14/14 Tomates</p>
+                            <div class="flex rounded-3xl bg-[#fefadb] h-2 w-full overflow-hidden">
+                                <div class="block h-full w-[100%] bg-[#002b00]"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-[#ffeebc] p-2 gap-2 rounded-xl">
+                            <p>00 Patates</p>
+                            <div class="flex rounded-3xl bg-[#fefadb] h-2 w-full overflow-hidden">
+                                <div class="block h-full w-[0%] bg-[#002b00]"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-[#ffeebc] p-2 gap-2 rounded-xl">
+                            <p>7/12 Salades</p>
+                            <div class="flex rounded-3xl bg-[#fefadb] h-2 w-full overflow-hidden">
+                                <div class="block h-full w-[80%] bg-[#002b00]"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-[#ffeebc] p-2 gap-2 rounded-xl">
+                            <p>3/20 Pommes</p>
+                            <div class="flex rounded-3xl bg-[#fefadb] h-2 w-full overflow-hidden">
+                                <div class="block h-full w-[20%] bg-[#002b00]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div
+                    class="flex flex-col bg-[#fefadb] text-[#002b00] h-full w-full rounded-2xl sm:row-span-2 gap-3 p-3">
+                    <div class="flex items-center justify-between w-full h-max">
+                        <p
+                            class="text-white uppercase bg-[#002b00] py-1 px-3 rounded-lg w-max h-max text-sm font-medium">
+                            Commandes</p>
+                        <p
+                            class="flex h-8 w-8 cursor-pointer hover:scale-[1.04] -rotate-45 rounded-full text-yellow-300 items-center justify-center aspect-square bg-[#002b00] p-3">
+                            &rarr;</p>
+                    </div>
+                    <div class="flex bg-[#ffeebc] items-center justify-between py-2 px-4 rounded-xl">
+                        <p class="text-lg font-medium">N°1203</p>
+                        <div
+                            class="flex bg-[#002b00] text-[#fefadb] h-8 w-8 aspect-square items-center justify-center rounded-full">
+                            &rarr;</div>
+                    </div>
+                    <div class="flex bg-[#ffeebc] items-center justify-between py-2 px-4 rounded-xl">
+                        <p class="text-lg font-medium">N°1202</p>
+                        <div
+                            class="flex bg-[#002b00] text-[#fefadb] h-8 w-8 aspect-square items-center justify-center rounded-full">
+                            &rarr;</div>
+                    </div>
+                    <div class="flex bg-[#ffeebc] items-center justify-between py-2 px-4 rounded-xl">
+                        <p class="text-lg font-medium">N°1201</p>
+                        <div
+                            class="flex bg-[#002b00] text-[#fefadb] h-8 w-8 aspect-square items-center justify-center rounded-full">
+                            &rarr;</div>
+                    </div>
+                    <div class="flex bg-[#ffeebc] items-center justify-between py-2 px-4 rounded-xl">
+                        <p class="text-lg font-medium">N°1200</p>
+                        <div
+                            class="flex bg-[#002b00] text-[#fefadb] h-8 w-8 aspect-square items-center justify-center rounded-full">
+                            &rarr;</div>
+                    </div>
+                    <div class="flex bg-[#ffeebc] items-center justify-between py-2 px-4 rounded-xl">
+                        <p class="text-lg font-medium">N°1999</p>
+                        <div
+                            class="flex bg-[#002b00] text-[#fefadb] h-8 w-8 aspect-square items-center justify-center rounded-full">
+                            &rarr;</div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex flex-col bg-[#fefadb] text-[#002b00] h-full w-full rounded-2xl gap-3 p-3">
+                    <div class="flex items-center justify-between w-full h-max">
+                        <p
+                            class="text-white uppercase bg-[#002b00] py-1 px-3 rounded-lg w-max h-max text-sm font-medium">
+                            MES avis</p>
+                        <p
+                            class="flex h-8 w-8 cursor-pointer hover:scale-[1.04] -rotate-45 rounded-full text-yellow-300 items-center justify-center aspect-square bg-[#002b00] p-3">
+                            &rarr;</p>
+                    </div>
+                    <div class="flex gap-3">
+                        <div class="flex flex-col gap-3 justify-center items-center p-3 rounded-xl bg-[#002b00] w-1/2">
+                            <p class="text-yellow-300 font-black text-5xl">05</p>
+                            <p class="text-yellow-300">Avis</p>
+                        </div>
+                        <div class="flex flex-col gap-3 w-1/2">
+                            <div class="flex flex-row justify-center items-center p-3 rounded-xl bg-[#ffeebc]">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                            <div class="flex flex-row justify-center items-center p-3 rounded-xl bg-[#ffeebc]">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="flex flex-col bg-[#fefadb] text-[#002b00] h-full w-full rounded-2xl gap-3 p-3">
+                    <div class="flex items-center justify-between w-full h-max">
+                        <p
+                            class="text-white uppercase bg-[#002b00] py-1 px-3 rounded-lg w-max h-max text-sm font-medium">
+                            MES OBJECTIFS</p>
+                        <p
+                            class="flex h-8 w-8 cursor-pointer hover:scale-[1.04] -rotate-45 rounded-full text-yellow-300 items-center justify-center aspect-square bg-[#002b00] p-3">
+                            &rarr;</p>
+                    </div>
+                    <div class="grid grid-cols-1 grid-rows-2 gap-2">
+                        <div class="flex flex-col bg-[#ffeebc] p-2 gap-2 rounded-xl">
+                            <p>89/300 Produits vendus</p>
+                            <div class="flex rounded-3xl bg-[#fefadb] h-2 w-full overflow-hidden">
+                                <div class="block h-full w-[40%] bg-[#002b00]"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col bg-[#ffeebc] p-2 gap-2 rounded-xl">
+                            <p>16/20 Collaborations différentes</p>
+                            <div class="flex rounded-3xl bg-[#fefadb] h-2 w-full overflow-hidden">
+                                <div class="block h-full w-[70%] bg-[#002b00]"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+</div>

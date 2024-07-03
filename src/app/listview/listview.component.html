@@ -1,0 +1,381 @@
+<div class="flex flex-col min-h-[100vh] bg-[#ffeebc]">
+    <nav class="flex bg-[#fefadb] w-full p-5 max-h-20">
+        <img src="../../assets/logo2.svg" alt="LOGO" class="w-1/3 sm:w-1/4">
+        <div class="flex justify-end gap-3 w-full">
+            <p class="hidden sm:flex font-space whitespace-nowrap self-center text-[#002b00]">Julie Carter</p>
+            <div
+                class="flex items-center justify-center rounded-full h-10 w-10 aspect-square text-yellow-300 font-bold bg-[#002b00]">
+                J</div>
+            <div
+                class="hidden sm:flex items-center justify-center rounded-full h-10 w-10 aspect-square text-yellow-300 font-bold bg-[#002b00]">
+                0</div>
+        </div>
+    </nav>
+
+
+
+
+
+    <div class="flex flex-col items-start justify-start p-10 px-3 sm:px-20">
+        <h1
+            class="text-[#002b00] self-stretch text-3xl font-black max-md:max-w-full max-md:text-4xl leading-10 relative">
+            Mon tableau de bord</h1>
+        <p class="text-[#002b00] font-space text-base max-md:max-w-full">Une sélection de produits frais, bio & variés,
+            en direct de producteurs locaux.</p>
+
+        <div class="hidden sm:flex bg-[#002b00] rounded-2xl gap-2 py-2 px-2 mt-5">
+            <a href="#" class="text-yellow-300 hover:bg-yellow-300/10 transition-all p-3 rounded-xl">Tableau de
+                Board</a>
+            <a href="#" class="text-yellow-300 hover:bg-yellow-300/10 transition-all p-3 rounded-xl">Mes Produits</a>
+            <a href="#" class="text-yellow-300 hover:bg-yellow-300/10 transition-all p-3 rounded-xl">Mes Commercants</a>
+            <select name="commandes"
+                class="text-yellow-300 bg-transparent hover:bg-yellow-300/10 transition-all p-3 rounded-xl">
+                <option [defaultSelected]="true" value="Mes Commandes">Mes Commandes</option>
+            </select>
+        </div>
+
+        <div class="flex sm:hidden bg-[#002b00] rounded-2xl gap-2 py-2 px-2 mt-5 w-full">
+            <select name="commandes"
+                class="w-full text-yellow-300 bg-transparent hover:bg-yellow-300/10 transition-all p-3 rounded-xl">
+                <option [defaultSelected]="true" value="Tableau de Board">Tableau de Board</option>
+                <option value="Mes Produits">Mes Produits</option>
+                <option value="Mes Commercants">Mes Commercants</option>
+                <option value="Mes Commandes">Mes Commandes</option>
+            </select>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between my-10 w-full gap-3">
+            <p class="uppercase text-sm text-[#002b00] bg-lime-400 font-medium py-1 px-4 rounded-lg h-max w-max">11
+                Commerçants total Enregistrer</p>
+            <div class="flex flex-row gap-3">
+                <select name="type" class="bg-[#002b00] text-yellow-300 py-2 px-4 rounded-full w-max">
+                    <option [defaultSelected]="true" value="Trier par">Trier par</option>
+                </select>
+                <button class="bg-[#002b00] text-yellow-300 py-2 px-4 rounded-full w-max">Filter</button>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-3">
+            <p class="uppercase text-sm text-[#002b00] bg-[#fefadb] font-medium py-1 px-4 rounded-lg h-max w-max">02 au
+                total</p>
+            <h1
+                class="text-[#002b00] self-stretch text-3xl font-black max-md:max-w-full max-md:text-4xl leading-10 relative">
+                Mes Favoris</h1>
+
+            <div class="w-full flex flex-col sm:flex-row items-center justify-center my-5 gap-3 sm:gap-10">
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-[#002b00]">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-[#002b00]/80 via-[#002b00]/50">
+                        </div>
+                    </div>
+                    <div class="relative flex items-start justify-end">
+                        <p class="text-3xl text-yellow-300 hover:scale-[1.65] transition-all cursor-pointer">&hearts;</p>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-[#002b00] w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-[#002b00]">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-[#002b00]/80 via-[#002b00]/50">
+                        </div>
+                    </div>
+                    <div class="relative flex items-start justify-end">
+                        <p class="text-3xl text-yellow-300 hover:scale-[1.65] transition-all cursor-pointer">&hearts;</p>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-[#002b00] w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="flex flex-col gap-3 mt-10">
+            <p class="uppercase text-sm text-[#002b00] bg-[#fefadb] font-medium py-1 px-4 rounded-lg h-max w-max">08 au
+                total</p>
+            <h1
+                class="text-[#002b00] self-stretch text-3xl font-black max-md:max-w-full max-md:text-4xl leading-10 relative">
+                Mes Commerçants</h1>
+
+            <div class="w-full grid grid-cols-1 sm:grid-cols-5 items-center justify-center my-5 gap-3 sm:gap-10">
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-[#002b00]">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-[#002b00]/80 via-[#002b00]/50">
+                        </div>
+                    </div>
+                    <div class="relative flex items-start justify-end">
+                        <p class="text-3xl text-white/50 hover:scale-[1.65] transition-all cursor-pointer">&hearts;</p>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-[#002b00] w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-[#002b00]">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-[#002b00]/80 via-[#002b00]/50">
+                        </div>
+                    </div>
+                    <div class="relative flex items-start justify-end">
+                        <p class="text-3xl text-white/50 hover:scale-[1.65] transition-all cursor-pointer">&hearts;</p>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-[#002b00] w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-[#002b00]">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-[#002b00]/80 via-[#002b00]/50">
+                        </div>
+                    </div>
+                    <div class="relative flex items-start justify-end">
+                        <p class="text-3xl text-white/50 hover:scale-[1.65] transition-all cursor-pointer">&hearts;</p>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-[#002b00] w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-[#002b00]">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-[#002b00]/80 via-[#002b00]/50">
+                        </div>
+                    </div>
+                    <div class="relative flex items-start justify-end">
+                        <p class="text-3xl text-white/50 hover:scale-[1.65] transition-all cursor-pointer">&hearts;</p>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-[#002b00] w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-[#002b00]">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-[#002b00]/80 via-[#002b00]/50">
+                        </div>
+                    </div>
+                    <div class="relative flex items-start justify-end">
+                        <p class="text-3xl text-white/50 hover:scale-[1.65] transition-all cursor-pointer">&hearts;</p>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-[#002b00] w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-[#002b00]">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-[#002b00]/80 via-[#002b00]/50">
+                        </div>
+                    </div>
+                    <div class="relative flex items-start justify-end">
+                        <p class="text-3xl text-white/50 hover:scale-[1.65] transition-all cursor-pointer">&hearts;</p>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-[#002b00] w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-[#002b00]">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-[#002b00]/80 via-[#002b00]/50">
+                        </div>
+                    </div>
+                    <div class="relative flex items-start justify-end">
+                        <p class="text-3xl text-white/50 hover:scale-[1.65] transition-all cursor-pointer">&hearts;</p>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-[#002b00] w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-[#002b00]">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-[#002b00]/80 via-[#002b00]/50">
+                        </div>
+                    </div>
+                    <div class="relative flex items-start justify-end">
+                        <p class="text-3xl text-white/50 hover:scale-[1.65] transition-all cursor-pointer">&hearts;</p>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-[#002b00] w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-3 mt-10">
+            <p class="uppercase text-sm text-[#002b00] bg-[#fefadb] font-medium py-1 px-4 rounded-lg h-max w-max">03 au
+                total</p>
+            <h1
+                class="text-[#002b00] self-stretch text-3xl font-black max-md:max-w-full max-md:text-4xl leading-10 relative">
+                Mes refus</h1>
+
+            <div class="w-full grid grid-cols-1 sm:grid-cols-5 items-center justify-center my-5 gap-10">
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-red-500">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-red-500/80 via-red-500/50">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-red-500 w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-red-500">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-red-500/80 via-red-500/50">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-red-500 w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+                <div
+                    class="h-[20rem] w-full sm:w-[15rem] p-4 relative grid flex-col items-start justify-between overflow-hidden rounded-xl bg-clip-border text-center text-gray-700 bg-red-500">
+                    <div class="absolute inset-0 m-0 h-full w-full overflow-hidden rounded-none bg-transparent bg-cover bg-clip-border bg-center text-gray-700 shadow-none"
+                        style="background-image: url('../../assets/Mask\ group\ \(1\).png');">
+                        <div
+                            class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-t from-red-500/80 via-red-500/50">
+                        </div>
+                    </div>
+                    <div class="relative flex flex-col justify-end h-full gap-1 text-start">
+                        <p class="uppercase bg-[#fefadb] text-red-500 w-max rounded-lg py-1 px-4 text-[.75rem] font-medium">Restaurateur
+                        </p>
+                        <p class="uppercase text-[#fefadb] font-black text-2xl">Mathieu B.</p>
+                        <p class="uppercase text-[#fefadb] text-sm">&#9741; ALFRED VILLE</p>
+                        <h2 class="block font-sans text-sm font-medium text-[#fefadb] tracking-normal antialiased">Restaurateur dans le 94, je
+                            cherche à proposer du sans...</h2>
+                        <h2 class="block font-sans text-sm text-[#fefadb] tracking-normal antialiased">En voir
+                            plus &rarr;</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

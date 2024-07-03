@@ -1,0 +1,366 @@
+<nav class="navbar bg-[#FFEEBC] flex items-center justify-between p-8">
+  <!-- Logo -->
+  <a class="btn btn-ghost text-lg">
+    <img alt="Logo" src="../../assets/Frame.svg" />
+  </a>
+
+  <!-- Menu for mobile -->
+  <div class="dropdown dropdown-end sm:hidden">
+    <button class="btn btn-ghost">
+      <i class="fa-solid fa-bars text-lg"></i>
+    </button>
+
+    <ul tabindex="0" class="dropdown-content menu z-[1] bg-base-200 p-6 rounded-box shadow w-56 gap-2">
+      <li><a class="text-black hover:text-zinc-600" (click)="goHome()">Accueil</a></li>
+      <li><a class="text-black hover:text-zinc-600">Blog</a></li>
+      <!-- <li><a>Comment ça marche ?</a></li>
+        <li><a>Abonnement</a></li> -->
+      <a href="/connexion" class="btn btn-sm bg-[#F9E92B] rounded-full">S’inscrire à la waitlist</a>
+    </ul>
+  </div>
+
+  <!-- Wrapper for centering menu and aligning waitlist -->
+  <div class="hidden sm:flex sm:items-center sm:justify-center sm:w-full">
+    <!-- Menu for desktop -->
+    <ul class="menu sm:menu-horizontal  gap-2 mx-auto">
+      <li><a (click)="goHome()" class="font-space font-semibold text-black hover:text-zinc-600">Accueil</a></li>
+      <li><a class="font-space font-semibold text-black hover:text-zinc-600">Blog</a></li>
+
+    </ul>
+
+    <!-- Waitlist section -->
+    <section
+      class="ml-auto flex flex-col justify-center px-6 py-4 text-base font-bold text-yellow-300 bg-green-950 max-w-[380px] rounded-[53px]">
+      <div class="flex gap-4 justify-center">
+        <a href="/connexion" class="w-max whitespace-nowrap">S’inscrire à la waitlist</a>
+        <img loading="lazy" src="../../assets/arrowbtn.svg" class="shrink-0 my-auto  aspect-[0.81]  w-[15px]"
+          alt="A relevant and brief description of the image" />
+      </div>
+    </section>
+  </div>
+</nav>
+
+
+<!-- MAIN PAGE-->
+
+
+<div class="flex flex-col bg-[#FFEEBC]">
+
+  <div class="flex flex-col text-green-950 bg-lime-400">
+    <div class="grid grid-cols-4 justify-center items-center">
+      <img loading="lazy" src="../../assets/Mode_Isolation.png" alt="Decorative" class="self-end max-h-[90%]" />
+
+      <div class="flex flex-col col-span-2">
+        <h1
+          class="h1 self-stretch text-8xl text-center uppercase font-[480] leading-[84px] max-md:max-w-full max-md:text-4xl max-md:leading-9 relative">
+          LES DERNIERS <br /> ARTICLES
+        </h1>
+        <p class="font-space mt-8 text-base text-center max-md:mt-5 max-md:max-w-full">
+          Connectez-vous avec des professionnels passionnés,<br /> que vous soyez petit producteur, restaurateur,
+          traiteur.<br /> Venez élargir votre réseau et collaborer pour créer quelque chose d'unique !
+        </p>
+      </div>
+
+      <img loading="lazy" src="../../assets/Calque_1 (1).png" alt="Decorative" class="self-end max-h-[90%]" />
+    </div>
+  </div>
+
+  <img loading="lazy" src="../../assets/Group.png" alt="Decorative" class="w-full z-10 -mt-1" />
+
+
+  <!-- BLOG-->
+
+
+
+
+
+  <section class="flex flex-col items-start p-20 bg-[#FFEEBC] max-md:px-5">
+    <div
+      class="font-space justify-center px-3.5 py-2 mt-16 text-base font-bold uppercase bg-yellow-50 rounded-lg text-green-950 max-md:mt-10">
+      Pour en apprendre chaque jour
+    </div>
+    <h1 class="h1 mt-6 text-7xl font-[480] leading-[66.24px] text-green-950 max-md:max-w-full max-md:text-4xl">
+      Notre blog
+    </h1>
+    <p class="font-space mt-6 text-base font-medium text-green-950 w-[647px] max-md:max-w-full">
+      Plongez dans des articles inspirants, des conseils pratiques et des
+      histoires captivantes qui célèbrent nos valeurs et nos partenaires de
+      confiance.
+    </p>
+    <a href="#"
+      class="flex flex-col justify-center px-6 py-4 mt-6 max-w-full text-base font-bold border border-solid border-green-950 rounded-[53px] text-green-950 w-[170px] max-md:px-5"
+      tabindex="0">
+      <div class="font-space flex gap-4 justify-center">
+        <span>En voir plus</span>
+        <img loading="lazy" src="../../assets/arrowbtn-g.svg" alt="" class="shrink-0 my-auto aspect-[1.25]  w-[15px]" />
+      </div>
+    </a>
+
+    <div class="self-stretch px-px mt-12 max-md:mt-10 max-md:max-w-full">
+      <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+        <article class="flex flex-col w-[33%] max-md:w-full bg-[#FEFADB] rounded-[35px]">
+          <figure class="relative w-full overflow-hidden rounded-2xl">
+            <img loading="lazy" src="../../assets/article.svg" alt="An inspiring article about revolutionizing sales"
+              class="w-full h-auto" />
+            <figcaption class="absolute top-5 left-5 bg-yellow-50 px-3 py-1 rounded-full text-sm font-bold">
+              4 MIN
+            </figcaption>
+          </figure>
+          <div class="p-7 max-md:p-5">
+            <div class="flex gap-2 mt-4">
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Gourmeet</span>
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Le Concept</span>
+            </div>
+            <h2 class="h1 mt-4 text-2xl  text-green-900 font-semibold leading-snug">
+              Révolutionnez Vos Ventes : Une Opportunité Inestimable pour les Producteurs Locaux
+            </h2>
+            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+              <span>Découvrez l’article</span>
+              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+            </a>
+          </div>
+        </article>
+
+        <article class="flex flex-col w-[33%] max-md:w-full bg-[#FEFADB] rounded-[35px]">
+          <figure class="relative w-full overflow-hidden rounded-2xl">
+            <img loading="lazy" src="../assets/article.svg" alt="An inspiring article about revolutionizing sales"
+              class="w-full h-auto" />
+            <figcaption class="absolute top-5 left-5 bg-yellow-50 px-3 py-1 rounded-full text-sm font-bold">
+              4 MIN
+            </figcaption>
+          </figure>
+          <div class="p-7 max-md:p-5">
+            <div class="flex gap-2 mt-4">
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Gourmeet</span>
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Le Concept</span>
+            </div>
+            <h2 class="h1 mt-4 text-2xl text-green-900 font-semibold leading-snug">
+              Élevez Votre Cuisine avec Gourmeet : Une Plateforme Essentielle pour les Restaurateurs
+            </h2>
+            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+              <span>Découvrez l’article</span>
+              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+            </a>
+          </div>
+        </article>
+
+        <article class="flex flex-col w-[33%] max-md:w-full bg-[#FEFADB] rounded-[35px]">
+          <figure class="relative w-full overflow-hidden rounded-2xl">
+            <img loading="lazy" src="../assets/article.svg" alt="An inspiring article about revolutionizing sales"
+              class="w-full h-auto" />
+            <figcaption class="absolute top-5 left-5 bg-yellow-50 px-3 py-1 rounded-full text-sm font-bold">
+              4 MIN
+            </figcaption>
+          </figure>
+          <div class="p-7 max-md:p-5">
+            <div class="flex gap-2 mt-4">
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Gourmeet</span>
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Le Concept</span>
+            </div>
+            <h2 class="h1 mt-4 text-2xl font-semibold  text-green-900 leading-snug">
+              Découvrez 5 moyens de révolutionner votre approvisionnement avec Gourmeet
+            </h2>
+            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+              <span>Découvrez l’article</span>
+              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+
+
+    <div class="self-stretch px-px mt-12 max-md:mt-10 max-md:max-w-full">
+      <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+        <article class="flex flex-col w-[33%] max-md:w-full bg-[#FEFADB] rounded-[35px]">
+          <figure class="relative w-full overflow-hidden rounded-2xl">
+            <img loading="lazy" src="../assets/article.svg" alt="An inspiring article about revolutionizing sales"
+              class="w-full h-auto" />
+            <figcaption class="absolute top-5 left-5 bg-yellow-50 px-3 py-1 rounded-full text-sm font-bold">
+              4 MIN
+            </figcaption>
+          </figure>
+          <div class="p-7 max-md:p-5">
+            <div class="flex gap-2 mt-4">
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Gourmeet</span>
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Le Concept</span>
+            </div>
+            <h2 class="h1 mt-4 text-2xl  text-green-900 font-semibold leading-snug">
+              Révolutionnez Vos Ventes : Une Opportunité Inestimable pour les Producteurs Locaux
+            </h2>
+            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+              <span>Découvrez l’article</span>
+              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+            </a>
+          </div>
+        </article>
+
+        <article class="flex flex-col w-[33%] max-md:w-full bg-[#FEFADB] rounded-[35px]">
+          <figure class="relative w-full overflow-hidden rounded-2xl">
+            <img loading="lazy" src="../assets/article.svg" alt="An inspiring article about revolutionizing sales"
+              class="w-full h-auto" />
+            <figcaption class="absolute top-5 left-5 bg-yellow-50 px-3 py-1 rounded-full text-sm font-bold">
+              4 MIN
+            </figcaption>
+          </figure>
+          <div class="p-7 max-md:p-5">
+            <div class="flex gap-2 mt-4">
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Gourmeet</span>
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Le Concept</span>
+            </div>
+            <h2 class="h1 mt-4 text-2xl text-green-900 font-semibold leading-snug">
+              Élevez Votre Cuisine avec Gourmeet : Une Plateforme Essentielle pour les Restaurateurs
+            </h2>
+            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+              <span>Découvrez l’article</span>
+              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+            </a>
+          </div>
+        </article>
+
+        <article class="flex flex-col w-[33%] max-md:w-full bg-[#FEFADB] rounded-[35px]">
+          <figure class="relative w-full overflow-hidden rounded-2xl">
+            <img loading="lazy" src="../assets/article.svg" alt="An inspiring article about revolutionizing sales"
+              class="w-full h-auto" />
+            <figcaption class="absolute top-5 left-5 bg-yellow-50 px-3 py-1 rounded-full text-sm font-bold">
+              4 MIN
+            </figcaption>
+          </figure>
+          <div class="p-7 max-md:p-5">
+            <div class="flex gap-2 mt-4">
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Gourmeet</span>
+              <span class=" font-space  px-3 py-2 bg-lime-100 rounded-lg">Le Concept</span>
+            </div>
+            <h2 class="h1 mt-4 text-2xl font-semibold  text-green-900 leading-snug">
+              Découvrez 5 moyens de révolutionner votre approvisionnement avec Gourmeet
+            </h2>
+            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+              <span>Découvrez l’article</span>
+              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="flex flex-col px-5 py-20 w-full bg-yellow-50 max-md:max-w-full">
+    <nav class="flex flex-col sm:flex-row text-black pl-0 sm:pl-5 gap-5">
+
+      <div class="flex flex-col w-full items-center justify-center sm:px-[7rem]">
+        <p class="font-space text-center sm:text-start">Restez à l’affut des dernières nouveautés et
+          inspirations Gourmeet.</p>
+        <div class="flex my-3 p-2 w-full bg-[#001E00] font-space text-sm rounded-full">
+          <form action="#" method="POST" class="flex flex-row w-full justify-between">
+            <input
+              class="text-lime-400 bg-transparent w-2/3 px-5 placeholder:text-lime-400 ring-0 border-none outline-none"
+              type="email" name="" id="" placeholder="Entrez votre adresse mail">
+            <button type="submit"
+              class="bg-[#F9E92B] px-4 py-2 text-black w-max rounded-full hover:scale-[1.025] transition-all">S’inscrire
+              à la waitlist</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="flex flex-row w-full">
+        <div class="flex flex-col w-1/3 sm:items-start sm:justify-start items-center justify-center">
+          <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Arborescence</p>
+          <a href="/blog" class="font-space hover:text-lime-600 transition-all w-max">Blog</a>
+          <a href="#" class="font-space hover:text-lime-600 transition-all w-max">A propos</a>
+          <a href="/blog" class="font-space hover:text-lime-600 transition-all w-max">Blog</a>
+        </div>
+
+        <div class="flex flex-col w-1/3 sm:items-start sm:justify-start items-center justify-center">
+          <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Nos politiques</p>
+          <a href="#" class="font-space hover:text-lime-600 transition-all w-max">Mention légales</a>
+          <a href="#" class="font-space hover:text-lime-600 transition-all w-max">Presse</a>
+          <a href="#" class="font-space hover:text-lime-600 transition-all w-max">FAQ</a>
+        </div>
+
+        <div class="flex flex-col w-1/3 sm:items-start sm:justify-start items-center justify-center">
+          <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Nous rejoindre</p>
+          <a href="/signup" class="font-space hover:text-lime-600 transition-all w-max">Je suis un producteur</a>
+          <a href="/signup" class="font-space hover:text-lime-600 transition-all w-max">Je suis un commerçant</a>
+        </div>
+      </div>
+
+    </nav>
+    <div class="flex flex-col px-20 mt-24 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
+      <div class="flex gap-5 justify-between max-md:flex-wrap max-md:max-w-full">
+        <img loading="lazy" src="../assets/logo2.svg" alt="Footer Image 1"
+          class="w-6/12 aspect-[5.88] max-md:max-w-full" />
+        <img loading="lazy" src="../assets/social.svg" alt="Footer Image 2"
+          class="shrink-0 self-end mt-20 max-w-full aspect-[6.25] w-[228px] max-md:mt-10" />
+      </div>
+      <hr class="shrink-0 mt-5 max-w-full h-px border border-solid bg-green-950 border-green-950 w-full" />
+      <div class="self-end mt-8 text-lg font-medium text-right text-green-950">Mentions légales . Presse</div>
+    </div>
+  </div>
+</div>
