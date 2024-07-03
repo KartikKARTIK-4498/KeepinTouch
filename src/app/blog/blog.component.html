@@ -11,11 +11,10 @@
     </button>
 
     <ul tabindex="0" class="dropdown-content menu z-[1] bg-base-200 p-6 rounded-box shadow w-56 gap-2">
-      <li><a class="text-black hover:text-zinc-600" (click)="goHome()">Accueil</a></li>
-      <li><a class="text-black hover:text-zinc-600">Blog</a></li>
+
       <!-- <li><a>Comment ça marche ?</a></li>
         <li><a>Abonnement</a></li> -->
-      <a href="/connexion" class="btn btn-sm bg-[#F9E92B] rounded-full">S’inscrire à la waitlist</a>
+        <a href="/signup"class="btn btn-sm bg-[#F9E92B] rounded-full">Rejoindre Gourmeet</a>
     </ul>
   </div>
 
@@ -23,20 +22,19 @@
   <div class="hidden sm:flex sm:items-center sm:justify-center sm:w-full">
     <!-- Menu for desktop -->
     <ul class="menu sm:menu-horizontal  gap-2 mx-auto">
-      <li><a (click)="goHome()" class="font-space font-semibold text-black hover:text-zinc-600">Accueil</a></li>
-      <li><a class="font-space font-semibold text-black hover:text-zinc-600">Blog</a></li>
+
 
     </ul>
 
     <!-- Waitlist section -->
-    <section
-      class="ml-auto flex flex-col justify-center px-6 py-4 text-base font-bold text-yellow-300 bg-green-950 max-w-[380px] rounded-[53px]">
-      <div class="flex gap-4 justify-center">
-        <a href="/connexion" class="w-max whitespace-nowrap">S’inscrire à la waitlist</a>
-        <img loading="lazy" src="../../assets/arrowbtn.svg" class="shrink-0 my-auto  aspect-[0.81]  w-[15px]"
-          alt="A relevant and brief description of the image" />
-      </div>
-    </section>
+    <button 
+    class="ml-auto flex flex-col justify-center px-6 py-4 text-base font-bold text-yellow-300 bg-green-950 max-w-[380px] rounded-[53px]">
+    <div class="flex gap-4 justify-center">
+        <a href="/signin" class="w-max whitespace-nowrap">Rejoindre Gourmeet</a>
+        <img loading="lazy" src="../assets/arrowbtn.svg" class="shrink-0 my-auto  aspect-[0.81]  w-[15px]"
+            alt="A relevant and brief description of the image" />
+    </div>
+</button>
   </div>
 </nav>
 
@@ -114,10 +112,10 @@
             <h2 class="h1 mt-4 text-2xl  text-green-900 font-semibold leading-snug">
               Révolutionnez Vos Ventes : Une Opportunité Inestimable pour les Producteurs Locaux
             </h2>
-            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+            <a href="/article" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
               <span>Découvrez l’article</span>
-              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
-            </a>
+ <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+ </a>
           </div>
         </article>
 
@@ -137,10 +135,10 @@
             <h2 class="h1 mt-4 text-2xl text-green-900 font-semibold leading-snug">
               Élevez Votre Cuisine avec Gourmeet : Une Plateforme Essentielle pour les Restaurateurs
             </h2>
-            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+            <a href="/article" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
               <span>Découvrez l’article</span>
-              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
-            </a>
+ <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+ </a>
           </div>
         </article>
 
@@ -160,10 +158,10 @@
             <h2 class="h1 mt-4 text-2xl font-semibold  text-green-900 leading-snug">
               Découvrez 5 moyens de révolutionner votre approvisionnement avec Gourmeet
             </h2>
-            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+            <a href="/article" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
               <span>Découvrez l’article</span>
-              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
-            </a>
+ <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+ </a>
           </div>
         </article>
 
@@ -190,10 +188,10 @@
             <h2 class="h1 mt-4 text-2xl  text-green-900 font-semibold leading-snug">
               Révolutionnez Vos Ventes : Une Opportunité Inestimable pour les Producteurs Locaux
             </h2>
-            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+            <a href="/article" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
               <span>Découvrez l’article</span>
-              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
-            </a>
+ <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+ </a>
           </div>
         </article>
 
@@ -213,10 +211,10 @@
             <h2 class="h1 mt-4 text-2xl text-green-900 font-semibold leading-snug">
               Élevez Votre Cuisine avec Gourmeet : Une Plateforme Essentielle pour les Restaurateurs
             </h2>
-            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+            <a href="/article" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
               <span>Découvrez l’article</span>
-              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
-            </a>
+ <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+ </a>
           </div>
         </article>
 
@@ -236,10 +234,10 @@
             <h2 class="h1 mt-4 text-2xl font-semibold  text-green-900 leading-snug">
               Découvrez 5 moyens de révolutionner votre approvisionnement avec Gourmeet
             </h2>
-            <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+            <a href="/article" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
               <span>Découvrez l’article</span>
-              <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
-            </a>
+ <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
+ </a>
           </div>
         </article>
 

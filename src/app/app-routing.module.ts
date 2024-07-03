@@ -11,15 +11,20 @@ import { DashboardproductComponent } from './dashboardproduct/dashboardproduct.c
 import { DashboardmerchantComponent } from './dashboardmerchant/dashboardmerchant.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ListviewComponent } from './listview/listview.component';
+import { ArticleComponent } from './article/article.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: HomeComponent,
+    data:  { title: 'Home Page - My Application', description: 'This is the home page of my application', keywords: 'home, angular, example' }
+
   },
   {
     path: 'landing',
-    component: HomeComponent
+    component: HomeComponent,
+    data:  { title: 'Home Page - My Application', description: 'This is the home page of my application', keywords: 'home, angular, example' }
+
   },
   {
     path: 'landingnew',
@@ -31,11 +36,12 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    component: LandingComponent
+    component: LandingComponent,
+    data:  { title: 'Home Page - My Application', description: 'This is the home page of my application', keywords: 'home, angular, example' }
   },
   {
     path: 'connexion',
-    component: ConnexionComponent
+    component: ConnexionComponent,
   },
   {
     path: 'signup',
@@ -61,6 +67,10 @@ const routes: Routes = [
     path: 'signin',
     component: SigninComponent
   },
+  {
+    path: 'article',
+    component: ArticleComponent
+  }
 ];
 
 @NgModule({

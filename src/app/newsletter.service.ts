@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class NewsletterService {
   private apiUrl = 'https://api.sendinblue.com/v3/contacts';
-  private apiKey = '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';
+  private apiKey = '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';
 
   constructor(private http: HttpClient) { }
 

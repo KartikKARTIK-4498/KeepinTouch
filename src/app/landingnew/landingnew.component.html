@@ -15,8 +15,7 @@
             <li><a class="text-black" (click)="changePage()">Blog</a></li>
             <!-- <li><a>Comment ça marche ?</a></li>
           <li><a>Abonnement</a></li> -->
-            <a (click)="scrollToSection('section1')" class="btn btn-sm bg-[#F9E92B] rounded-full">S’inscrire à la
-                waitlist</a>
+            <a href="/signin"  class="btn btn-sm bg-[#F9E92B] rounded-full">Rejoindre Gourmeet</a>
         </ul>
     </div>
 
@@ -43,7 +42,7 @@
         <button (click)="scrollToSection('section1')"
             class="ml-auto flex flex-col justify-center px-6 py-4 text-base font-bold text-yellow-300 bg-green-950 max-w-[380px] rounded-[53px]">
             <div class="flex gap-4 justify-center">
-                <a href="#footerhead" class="w-max whitespace-nowrap">S’inscrire à la waitlist</a>
+                <a href="/signin"  class="w-max whitespace-nowrap">Rejoindre Gourmeet</a>
                 <img loading="lazy" src="../assets/arrowbtn.svg" class="shrink-0 my-auto  aspect-[0.81]  w-[15px]"
                     alt="A relevant and brief description of the image" />
             </div>
@@ -71,8 +70,8 @@
                 </p>
                 <form
                     class="flex flex-col justify-center px-6 py-4 mt-6 max-w-full font-bold text-yellow-300 bg-green-950 rounded-[53px] w-[239px] max-md:px-5">
-                    <a href="#footerhead" role="button" tabindex="0" class="flex gap-4 justify-center cursor-pointer">
-                        <span>S'inscrire a la waitlist</span>
+                    <a href="/signin"  role="button" tabindex="0" class="flex gap-4 justify-center cursor-pointer">
+                        <span>Rejoindre Gourmeet</span>
                         <img loading="lazy" src="../assets/arrowbtn.svg"
                             class="shrink-0 my-auto aspect-[1.25]  w-[15px]" />
                     </a>
@@ -104,32 +103,132 @@
 
         <!-- CARDS -->
 
-        <div class="grid grid-cols-1 sm:grid-cols-5 my-10 gap-5 mb-0">
+        <div class="mt-20 w-full overflow-hidden ">
             <div
-                class="hidden sm:flex bg-[#FEFADB] rounded-r-3xl overflow-hidden items-center justify-start col-span-1">
-                <img src="../../assets/Mode_Isolation (1).png" alt="CARD IMAGE" class="hidden sm:block h-[90%]">
-            </div>
-
-            <div
-                class="flex flex-col sm:flex-row bg-[#FEFADB] rounded-3xl overflow-hidden items-center col-span-3 sm:px-10">
-                <div class="flex flex-col gap-3 text-black mx-5 my-5">
-                    <div class="flex px-4 py-1 bg-black w-max rounded-full">
-                        <p class="text-[#FEFADB] font-bold font-space text-sm">AVANTAGE N°1</p>
+              class=" mt-12 w-full inline-flex flex-nowrap [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(300%-200px),transparent_100%)]">
+              <ul
+                class=" gap-1 flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll  ">
+      
+                <li>
+                    <div
+                    class="flex flex-col sm:flex-row w-[350px] md:w-[846px] bg-[#FEFADB] rounded-3xl overflow-hidden items-center col-span-3 sm:px-10">
+                    <div class="flex flex-col gap-3 text-black mx-5 my-5">
+                        <div class="flex px-4 py-1 bg-black w-max rounded-full">
+                            <p class="text-[#FEFADB] font-bold font-space text-sm">AVANTAGE N°1</p>
+                        </div>
+    
+                        <p class="text-3xl font-bold">Boostez votre activité</p>
+    
+                        <p class="font-space">La visibilité de vos produits et la vente directe aux commerçants permettent
+                            de maximiser vos profits.</p>
                     </div>
-
-                    <p class="text-3xl font-bold">Boostez votre activité</p>
-
-                    <p class="font-space">La visibilité de vos produits et la vente directe aux commerçants permettent
-                        de maximiser vos profits.</p>
+    
+                    <img src="../../assets/Mode_Isolation (2).png" alt="CARD IMAGE"
+                        class="block h-[80%] sm:self-end m-10 self-center">
                 </div>
-
-                <img src="../../assets/Mode_Isolation (2).png" alt="CARD IMAGE"
-                    class="block h-[80%] sm:self-end m-10 self-center">
+                </li>
+                <li>
+                    <div
+                    class="flex flex-col sm:flex-row w-[350px] md:w-[846px] bg-[#FEFADB] rounded-3xl overflow-hidden items-center col-span-3 sm:px-10">
+                    <div class="flex flex-col gap-3 text-black mx-5 my-5">
+                        <div class="flex px-4 py-1 bg-black w-max rounded-full">
+                            <p class="text-[#FEFADB] font-bold font-space text-sm">AVANTAGE N°1</p>
+                        </div>
+    
+                        <p class="text-3xl font-bold">Boostez votre activité</p>
+    
+                        <p class="font-space">La visibilité de vos produits et la vente directe aux commerçants permettent
+                            de maximiser vos profits.</p>
+                    </div>
+    
+                    <img src="../../assets/Mode_Isolation (2).png" alt="CARD IMAGE"
+                        class="block h-[80%] sm:self-end m-10 self-center">
+                </div>
+                </li>
+                <li>
+                    <div
+                    class="flex flex-col sm:flex-row w-[350px] md:w-[846px] bg-[#FEFADB] rounded-3xl overflow-hidden items-center col-span-3 sm:px-10">
+                    <div class="flex flex-col gap-3 text-black mx-5 my-5">
+                        <div class="flex px-4 py-1 bg-black w-max rounded-full">
+                            <p class="text-[#FEFADB] font-bold font-space text-sm">AVANTAGE N°1</p>
+                        </div>
+    
+                        <p class="text-3xl font-bold">Boostez votre activité</p>
+    
+                        <p class="font-space">La visibilité de vos produits et la vente directe aux commerçants permettent
+                            de maximiser vos profits.</p>
+                    </div>
+    
+                    <img src="../../assets/Mode_Isolation (2).png" alt="CARD IMAGE"
+                        class="block h-[80%] sm:self-end m-10 self-center">
+                </div>
+                </li>
+              </ul>
+              <ul
+              class=" gap-1 flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll  ">
+    
+              <li>
+                  <div
+                  class="flex flex-col sm:flex-row w-[350px] md:w-[846px] bg-[#FEFADB] rounded-3xl overflow-hidden items-center col-span-3 sm:px-10">
+                  <div class="flex flex-col gap-3 text-black mx-5 my-5">
+                      <div class="flex px-4 py-1 bg-black w-max rounded-full">
+                          <p class="text-[#FEFADB] font-bold font-space text-sm">AVANTAGE N°1</p>
+                      </div>
+  
+                      <p class="text-3xl font-bold">Boostez votre activité</p>
+  
+                      <p class="font-space">La visibilité de vos produits et la vente directe aux commerçants permettent
+                          de maximiser vos profits.</p>
+                  </div>
+  
+                  <img src="../../assets/Mode_Isolation (2).png" alt="CARD IMAGE"
+                      class="block h-[80%] sm:self-end m-10 self-center">
+              </div>
+              </li>
+              <li>
+                  <div
+                  class="flex flex-col sm:flex-row w-[350px] md:w-[846px] bg-[#FEFADB] rounded-3xl overflow-hidden items-center col-span-3 sm:px-10">
+                  <div class="flex flex-col gap-3 text-black mx-5 my-5">
+                      <div class="flex px-4 py-1 bg-black w-max rounded-full">
+                          <p class="text-[#FEFADB] font-bold font-space text-sm">AVANTAGE N°1</p>
+                      </div>
+  
+                      <p class="text-3xl font-bold">Boostez votre activité</p>
+  
+                      <p class="font-space">La visibilité de vos produits et la vente directe aux commerçants permettent
+                          de maximiser vos profits.</p>
+                  </div>
+  
+                  <img src="../../assets/Mode_Isolation (2).png" alt="CARD IMAGE"
+                      class="block h-[80%] sm:self-end m-10 self-center">
+              </div>
+              </li>
+              <li>
+                  <div
+                  class="flex flex-col sm:flex-row w-[350px] md:w-[846px] bg-[#FEFADB] rounded-3xl overflow-hidden items-center col-span-3 sm:px-10">
+                  <div class="flex flex-col gap-3 text-black mx-5 my-5">
+                      <div class="flex px-4 py-1 bg-black w-max rounded-full">
+                          <p class="text-[#FEFADB] font-bold font-space text-sm">AVANTAGE N°1</p>
+                      </div>
+  
+                      <p class="text-3xl font-bold">Boostez votre activité</p>
+  
+                      <p class="font-space">La visibilité de vos produits et la vente directe aux commerçants permettent
+                          de maximiser vos profits.</p>
+                  </div>
+  
+                  <img src="../../assets/Mode_Isolation (2).png" alt="CARD IMAGE"
+                      class="block h-[80%] sm:self-end m-10 self-center">
+              </div>
+              </li>
+            </ul>
             </div>
+        </div>
 
-            <div class="hidden sm:flex bg-[#FEFADB] rounded-l-3xl overflow-hidden items-center justify-end col-span-1">
-                <img src="../../assets/Group (1).png" alt="CARD IMAGE" class="hidden sm:block h-[90%]">
-            </div>
+        <div class="grid grid-cols-1 sm:grid-cols-5 my-10 gap-5 mb-0">
+
+
+           
         </div>
     </section>
 

@@ -11,12 +11,11 @@
         </button>
 
         <ul tabindex="0" class="dropdown-content menu z-[1] bg-base-200 p-6 rounded-box shadow w-56 gap-2">
-            <li><a class="text-black">Accueil</a></li>
-            <li><a class="text-black" (click)="changePage()">Blog</a></li>
+            <li><a class="text-black"  href="/home" >Commerçant</a></li>
+            <li><a class="text-black" href="/landingnew">Producteur</a></li>
             <!-- <li><a>Comment ça marche ?</a></li>
           <li><a>Abonnement</a></li> -->
-            <a (click)="scrollToSection('section1')" class="btn btn-sm bg-[#F9E92B] rounded-full">S’inscrire à la
-                waitlist</a>
+            <a href="/signup"class="btn btn-sm bg-[#F9E92B] rounded-full">Rejoindre Gourmeet</a>
         </ul>
     </div>
 
@@ -189,7 +188,7 @@
         </p>
         <a tabindex="0"
             class="flex flex-col justify-center px-6 py-4 mt-5 max-w-full text-base font-bold border border-solid border-green-950 rounded-[53px] text-green-950 w-[300px] max-md:px-5"
-            href="#">
+            href="/signin">
             <div class="font-space flex gap-4 justify-center">
                 <span>Je découvre les partenaires</span>
                 <img loading="lazy" src="../assets/arrowbtn-g.svg" alt="Discover Products"
@@ -367,7 +366,7 @@
                 Plongez dans des articles inspirants, des conseils pratiques et des histoires captivantes qui célèbrent
                 nos valeurs et nos partenaires de confiance.
             </p>
-            <a href="#"
+            <a href="/blog"
                 class="flex flex-col justify-center px-6 py-4 mt-6 max-w-full text-base font-bold border border-solid border-green-950 rounded-[53px] text-green-950 w-[170px] max-md:px-5"
                 tabindex="0">
                 <div class="font-space flex gap-4 justify-center">
@@ -394,7 +393,7 @@
                     <h2 class="h1 mt-4 text-2xl text-green-900 font-semibold leading-snug">
                         Révolutionnez Vos Ventes : Une Opportunité Inestimable pour les Producteurs Locaux
                     </h2>
-                    <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+                    <a href="/article" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
                         <span>Découvrez l’article</span>
                         <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
                     </a>
@@ -416,7 +415,7 @@
                     <h2 class="h1 mt-4 text-2xl text-green-900 font-semibold leading-snug">
                         Élevez Votre Cuisine avec Gourmeet : Une Plateforme Essentielle pour les Restaurateurs
                     </h2>
-                    <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+                    <a href="/article" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
                         <span>Découvrez l’article</span>
                         <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
                     </a>
@@ -465,27 +464,27 @@
                 </div>
             </div>
 
-            <div class="flex flex-row w-full">
-                <div class="flex flex-col w-1/3 sm:items-start sm:justify-start items-center justify-center">
-                    <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Arborescence</p>
-                    <a href="/blog" class="font-space hover:text-lime-600 transition-all w-max">Blog</a>
-                    <a href="#" class="font-space hover:text-lime-600 transition-all w-max">A propos</a>
-                    <a href="/blog" class="font-space hover:text-lime-600 transition-all w-max">Blog</a>
+            <div class="flex flex-col sm:flex-row w-full">
+                <div class="flex flex-col w-full sm:w-1/3 sm:items-start sm:justify-start items-center justify-center mb-4 sm:mb-0">
+                  <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Arborescence</p>
+                  <a href="/blog" class="font-space hover:text-lime-600 transition-all w-max">Blog</a>
+                  <a href="#" class="font-space hover:text-lime-600 transition-all w-max">A propos</a>
+                  <a href="/blog" class="font-space hover:text-lime-600 transition-all w-max">Blog</a>
                 </div>
-
-                <div class="flex flex-col w-1/3 sm:items-start sm:justify-start items-center justify-center">
-                    <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Nos politiques</p>
-                    <a href="#" class="font-space hover:text-lime-600 transition-all w-max">Mention légales</a>
-                    <a href="#" class="font-space hover:text-lime-600 transition-all w-max">Presse</a>
-                    <a href="#" class="font-space hover:text-lime-600 transition-all w-max">FAQ</a>
+              
+                <div class="flex flex-col w-full sm:w-1/3 sm:items-start sm:justify-start items-center justify-center mb-4 sm:mb-0">
+                  <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Nos politiques</p>
+                  <a href="#" class="font-space hover:text-lime-600 transition-all w-max">Mention légales</a>
+                  <a href="#" class="font-space hover:text-lime-600 transition-all w-max">Presse</a>
+                  <a href="#" class="font-space hover:text-lime-600 transition-all w-max">FAQ</a>
                 </div>
-
-                <div class="flex flex-col w-1/3 sm:items-start sm:justify-start items-center justify-center">
-                    <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Nous rejoindre</p>
-                    <a href="/signup" class="font-space hover:text-lime-600 transition-all w-max">Je suis un producteur</a>
-                    <a href="/signup" class="font-space hover:text-lime-600 transition-all w-max">Je suis un commerçant</a>
+              
+                <div class="flex flex-col w-full sm:w-1/3 sm:items-start sm:justify-start items-center justify-center">
+                  <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Nous rejoindre</p>
+                  <a href="/signup" class="font-space hover:text-lime-600 transition-all w-max">Je suis un producteur</a>
+                  <a href="/signup" class="font-space hover:text-lime-600 transition-all w-max">Je suis un commerçant</a>
                 </div>
-            </div>
+              </div>
 
         </nav>
         <div class="flex flex-col px-20 mt-24 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">

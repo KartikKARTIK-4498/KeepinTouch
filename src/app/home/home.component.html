@@ -15,7 +15,7 @@
       <li><a class="text-black" (click)="changePage()">Blog</a></li>
       <!-- <li><a>Comment ça marche ?</a></li>
         <li><a>Abonnement</a></li> -->
-      <a (click)="scrollToSection('section1')" class="btn btn-sm bg-[#F9E92B] rounded-full">S’inscrire à la waitlist</a>
+      <a href="#newsletter" class="btn btn-sm bg-[#F9E92B] rounded-full">S’inscrire à la waitlist</a>
     </ul>
   </div>
 
@@ -41,7 +41,7 @@
     <button
       class="ml-auto flex flex-col justify-center px-6 py-4 text-base font-bold text-yellow-300 bg-green-950 max-w-[380px] rounded-[53px]">
       <div class="flex gap-4 justify-center">
-        <a href="#footerhead" class="w-max whitespace-nowrap">S’inscrire à la waitlist</a>
+        <a href="#newsletter"  class="w-max whitespace-nowrap">S’inscrire à la waitlist</a>
         <img loading="lazy" src="../assets/arrowbtn.svg" class="shrink-0 my-auto  aspect-[0.81]  w-[15px]"
           alt="A relevant and brief description of the image" />
       </div>
@@ -70,7 +70,7 @@
         <form
           class="flex flex-col justify-center px-6 py-4 mt-6 max-w-full font-bold text-yellow-300 bg-green-950 rounded-[53px] w-[239px] max-md:px-5">
           <div role="button" tabindex="0" class="flex gap-4 justify-center cursor-pointer">
-            <a href="#footerhead" class="w-max whitespace-nowrap">S’inscrire à la waitlist</a>
+            <a href="#newsletter" class="w-max whitespace-nowrap">S’inscrire à la waitlist</a>
             <img loading="lazy" src="../assets/arrowbtn.svg" class="shrink-0 my-auto aspect-[1.25]  w-[15px]" />
           </div>
         </form>
@@ -516,7 +516,7 @@
         Plongez dans des articles inspirants, des conseils pratiques et des histoires captivantes qui célèbrent nos
         valeurs et nos partenaires de confiance.
       </p>
-      <a href="#"
+      <a href="/blog"
         class="flex flex-col justify-center px-6 py-4 mt-6 max-w-full text-base font-bold border border-solid border-green-950 rounded-[53px] text-green-950 w-[170px] max-md:px-5"
         tabindex="0">
         <div class="font-space flex gap-4 justify-center">
@@ -542,7 +542,7 @@
           <h2 class="h1 mt-4 text-2xl text-green-900 font-semibold leading-snug">
             Révolutionnez Vos Ventes : Une Opportunité Inestimable pour les Producteurs Locaux
           </h2>
-          <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+          <a href="/article" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
             <span>Découvrez l’article</span>
             <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
           </a>
@@ -564,7 +564,7 @@
           <h2 class="h1 mt-4 text-2xl text-green-900 font-semibold leading-snug">
             Élevez Votre Cuisine avec Gourmeet : Une Plateforme Essentielle pour les Restaurateurs
           </h2>
-          <a href="#" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
+          <a href="/article" class="font-space flex items-center gap-2 mt-4 text-green-950 font-medium">
             <span>Découvrez l’article</span>
             <img loading="lazy" src="../assets/arow small.svg" alt="Read more" class="w-6 h-6" />
           </a>
@@ -580,7 +580,7 @@
 
 
 
-  <section id="section1" class="bg-amber-100 py-20 w-full max-md:max-w-full flex flex-col">
+  <section id="newsletter" class="bg-amber-100 py-20 w-full max-md:max-w-full flex flex-col">
     <section class="px-20 mb-14 w-full max-md:px-5 max-md:mb-10 flex flex-col max-md:max-w-full">
       <img class="z-10 shrink-0 self-end mr-20 -mb-5  rounded-full h-[149px] w-[149px] max-md:ml-2.5 max-sm:mr-8"
         src="../assets/love2.svg" />
@@ -638,7 +638,7 @@
         </div>
       </div> 
     </footer> -->
-  <div id="footerhead" class="flex flex-col px-5 py-20 w-full bg-yellow-50 max-md:max-w-full">
+  <section id="footerhead" class="flex flex-col px-5 py-20 w-full bg-yellow-50 max-md:max-w-full">
     <nav class="flex flex-col sm:flex-row text-black pl-0 sm:pl-5 gap-5">
 
       <div class="flex flex-col w-full items-center justify-center sm:px-[7rem]">
@@ -656,27 +656,28 @@
         </div>
       </div>
 
-      <div class="flex flex-row w-full">
-        <div class="flex flex-col w-1/3 sm:items-start sm:justify-start items-center justify-center">
+      <div class="flex flex-col sm:flex-row w-full">
+        <div class="flex flex-col w-full sm:w-1/3 sm:items-start sm:justify-start items-center justify-center mb-4 sm:mb-0">
           <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Arborescence</p>
           <a href="/blog" class="font-space hover:text-lime-600 transition-all w-max">Blog</a>
           <a href="#" class="font-space hover:text-lime-600 transition-all w-max">A propos</a>
           <a href="/blog" class="font-space hover:text-lime-600 transition-all w-max">Blog</a>
         </div>
-
-        <div class="flex flex-col w-1/3 sm:items-start sm:justify-start items-center justify-center">
+      
+        <div class="flex flex-col w-full sm:w-1/3 sm:items-start sm:justify-start items-center justify-center mb-4 sm:mb-0">
           <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Nos politiques</p>
           <a href="#" class="font-space hover:text-lime-600 transition-all w-max">Mention légales</a>
           <a href="#" class="font-space hover:text-lime-600 transition-all w-max">Presse</a>
           <a href="#" class="font-space hover:text-lime-600 transition-all w-max">FAQ</a>
         </div>
-
-        <div class="flex flex-col w-1/3 sm:items-start sm:justify-start items-center justify-center">
+      
+        <div class="flex flex-col w-full sm:w-1/3 sm:items-start sm:justify-start items-center justify-center">
           <p class="bg-lime-400 px-3 py-1 w-max rounded-lg mb-3 font-space">Nous rejoindre</p>
           <a href="/signup" class="font-space hover:text-lime-600 transition-all w-max">Je suis un producteur</a>
           <a href="/signup" class="font-space hover:text-lime-600 transition-all w-max">Je suis un commerçant</a>
         </div>
       </div>
+      
 
     </nav>
     <div class="flex flex-col px-20 mt-24 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
@@ -689,5 +690,6 @@
       <hr class="shrink-0 mt-5 max-w-full h-px border border-solid bg-green-950 border-green-950 w-full" />
       <div class="self-end mt-8 text-lg font-medium text-right text-green-950">Mentions légales . Presse</div>
     </div>
-  </div>
+  </section>
+
 </div>
