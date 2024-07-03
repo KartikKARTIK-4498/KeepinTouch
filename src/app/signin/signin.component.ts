@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class SigninComponent {
 
-  private url: string = 'http://127.0.0.1:8000/api/login/';
+  private url: string = 'https://karthik37.pythonanywhere.com/api/login/';
   private ddata: any = {}
 
   emailVal($event: any) {

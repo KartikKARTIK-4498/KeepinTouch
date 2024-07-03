@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class SignupComponent {
 
-  private url: string = 'http://127.0.0.1:8000/api/register/';
+  private url: string = 'https://karthik37.pythonanywhere.com/api/register/';
   private ddata: any = {}
 
   nameVal($event: any) {

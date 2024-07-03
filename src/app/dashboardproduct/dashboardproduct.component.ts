@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class DashboardproductComponent {
 
-  private url: string = 'http://127.0.0.1:8000/api/user/';
+  private url: string = 'https://karthik37.pythonanywhere.com/api/user/';
   
   ngOnInit(): void {
     let sendData = {
